@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#78EB14"
+        android:padding="5dp"
+        android:text="High Score : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#78EB14"
+        android:padding="5dp"
+        android:text="0:30"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="5dp"
+        android:text="Q 1 What is 45+45 ?"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimer" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuestion">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtA"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="25"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/txtQuestion"
+                app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
+
+            <TextView
+                android:id="@+id/txtB"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="30"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txtC"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="25"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/txtQuestion"
+                app:layout_constraintTop_toBottomOf="@+id/txtQuestion" />
+
+            <TextView
+                android:id="@+id/txtD"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="30"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtYourScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:text="Your Score is 93"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCorrectAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Correct Answer"
+        android:textColor="#31E610"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtYourScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
